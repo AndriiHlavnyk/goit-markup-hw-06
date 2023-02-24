@@ -451,20 +451,19 @@ img {
 }
 .footer-media {
   margin-left: 120px;
-  width: 208px;
 }
 .Subscribe {
   margin-left: 80px;
-  width: 208px;
 }
 .Subscribe-input {
-  width: 360px;
+  min-width: 264px;
   height: 40px;
   outline: transparent;
   border: 1px solid var(--light-grey);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
+  color: var(--white);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .Subscribe-input:focus {
@@ -495,7 +494,9 @@ img {
   border: none;
   min-width: 165px;
   min-height: 40px;
-  margin: 0 140px 130px 43px;
+  margin-left: 43px;
+  display: flex;
+  align-items: center;
   transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -509,13 +510,9 @@ img {
   color: var(--white);
 }
 .btn-sub {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 8.33%;
-  bottom: 8.33%;
-  background: var(--white);
   color: var(--white);
+
+  margin-left: 10px;
 }
 
 /* ==========================Portfolio======================= */
@@ -729,7 +726,7 @@ img {
   border: 1px solid var(--light-grey);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 38px;
+  padding: 0 5px 0 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
@@ -741,30 +738,25 @@ img {
 .modal-span-title {
   width: 34px;
   height: 16px;
-  top: -2px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
   color: var(--light-grey);
-  position: relative;
-  margin-bottom: 8px;
   text-align: center;
 }
 .input-wrap {
+  display: block;
   position: relative;
+  padding-top: 4px;
 }
 .modal-icon {
   position: absolute;
-  top: 20%;
   left: 16px;
+  top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-input {
-  gap: 8px;
 }
 .modal-textarea {
   width: 360px;
@@ -774,7 +766,8 @@ img {
   background-color: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 20px;
+
+  padding: 8px 15px;
 }
 .modal-textarea:focus {
   border-color: var(--web-and-btn);
@@ -794,9 +787,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .policy-label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
@@ -804,13 +794,15 @@ img {
   flex: none;
   order: 1;
   flex-grow: 0;
-  padding-left: 8px;
+
   display: flex;
+  padding-top: 20px;
 }
 .privacy-policy {
   text-decoration-line: underline;
   color: var(--web-and-btn);
-  padding-left: 3px;
+  margin-left: 3px;
+  cursor: pointer;
 }
 .policy-label::before {
   content: "";
@@ -849,7 +841,7 @@ img {
   border: none;
   min-width: 169px;
   min-height: 56px;
-  margin: 24px 96px 24px 95px;
+  margin: 24px 96px 0 95px;
   transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
