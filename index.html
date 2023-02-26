@@ -439,20 +439,22 @@
         </div>
         <div class="Subscribe">
           <p class="footer-text-soc sub-text">Subscribe</p>
-          <div class="input-btn-sub">
-            <input
-              type="text"
-              name="user-email"
-              class="Subscribe-input"
-              placeholder="E-mail"
-            />
-            <button class="button-subscribe" type="submit">
-              Subscribe
-              <svg class="btn-sub" width="24" height="20">
-                <use href="./images/icons.svg#icon-Subscribe"></use>
-              </svg>
-            </button>
-          </div>
+          <form class="modal-form">
+            <div class="input-btn-sub">
+              <input
+                type="text"
+                name="user-email"
+                class="Subscribe-input"
+                placeholder="E-mail"
+              />
+              <button class="button-subscribe" type="submit">
+                Subscribe
+                <svg class="btn-sub" width="24" height="20">
+                  <use href="./images/icons.svg#icon-Subscribe"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -502,7 +504,7 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <div>
+          <div class="input-policy">
             <input
               id="policy"
               name="policy"

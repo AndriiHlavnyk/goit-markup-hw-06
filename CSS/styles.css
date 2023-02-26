@@ -494,7 +494,7 @@ img {
   border: none;
   min-width: 165px;
   min-height: 40px;
-  margin-left: 43px;
+  margin-left: 24px;
   display: flex;
   align-items: center;
   transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -746,7 +746,6 @@ img {
   display: block;
   position: relative;
   margin-top: 4px;
-  margin-bottom: 8px;
 }
 .modal-icon {
   position: absolute;
@@ -756,7 +755,9 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-input {
+  display: block;
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 .modal-textarea {
   width: 100%;
@@ -794,8 +795,9 @@ img {
   flex: none;
   order: 1;
   flex-grow: 0;
-
   display: flex;
+}
+.input-policy {
   margin-top: 20px;
 }
 .privacy-policy {
